@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Nasi Goreng",
+    "description": "Nasi yang digoreng dengan bumbu dan bahan lainnya."
+  },
+  {
+    "id": 2,
+    "name": "Mie Goreng",
+    "description": "Mie yang digoreng dengan bumbu dan bahan lainnya."
+  },
+  {
+    "id": 3,
+    "name": "Sate Ayam",
+    "description": "Potongan ayam yang ditusuk dan dibakar dengan bumbu kacang."
+  }
+]

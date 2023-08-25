@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+    <title>Produk</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="my-theme/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/product.css" />
+
+    <style>
+      /* tulis kode CSS internal di bawah sini */
+
+      /* Batas Akhir penulisan kode CSS internal */
+    </style>
+  </head>
+
+  <body>
+    <!-- Tulis Kode Bootstrap Di Bawah Sini -->
+    <nav class="navbar sticky-top navbar-dark bg-primary navbar-expand-lg bisadicopy">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo/logo_kuy.png" height="40" alt="image" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav11" aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav11">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#our-team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#review">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-us">Contact US</a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-secondary ms-md-3" href="https://wa.me/6289678919901"> <i class="bi bi-whatsapp"></i> Chat </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="riki-block produk text-center my-5 py-5">
+      <div class="container">
+        <h1 class="fs-1">Choose Your Products</h1>
+        <p class="fs-4">Nikmati jenis kopi pilihan dari petani ternama</p>
+        <hr class="border border-primary border-3 opacity-75 shadow" />
+
+        <!-- Ini Untuk Select -->
+        <div class="row">
+          <div class="col-3">
+            <div class="form-floating">
+              <select class="form-control form-select" id="select_kopi">
+                <option disabled selected>-</option>
+                <option value="arabica">Arabica</option>
+                <option value="robusta">Robusta</option>
+                <option value="nonkopi">Non Kopi</option>
+              </select>
+              <label for="select_kopi">Jenis Kopi</label>
+            </div>
+          </div>
+          <div class="col-3 m-auto">
+            <div class="form-floating">
+              <select class="form-control form-select" id="select_harga">
+                <option disabled selected>-</option>
+                <option value="murah">murah</option>
+                <option value="mahal">mahal</option>
+              </select>
+              <label for="select_kopi">Harga</label>
+            </div>
+          </div>
+
+          <div class="col-4 m-auto">
+            <form class="input-group" id="search-form">
+              <input iid="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari Coffee..." aria-label="Search" />
+              <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5">
+          <div class="col mb-3 shadow">
+            <div class="card">
+              <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-3">Cappuccino</h5>
+                <div class="row hargasize my-4">
+                  <div class="col fs-4">150 ml</div>
+                  <div class="col fw-bold text-secondary fs-4">15.000</div>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-secondary w-100 fs-4"> <i class="bi bi-cart-check"></i> Beli </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 shadow">
+            <div class="card">
+              <img src="images/produk/product_espresso.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-3">Esspresso</h5>
+                <div class="row hargasize my-4">
+                  <div class="col fs-4">150 ml</div>
+                  <div class="col fw-bold text-secondary fs-4">18.000</div>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-secondary w-100 fs-4"> <i class="bi bi-cart-check"></i> Beli </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 shadow">
+            <div class="card">
+              <img src="images/produk/product_kopi_susu.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-3">Coffee Milk</h5>
+                <div class="row hargasize my-4">
+                  <div class="col fs-4">130 ml</div>
+                  <div class="col fw-bold text-secondary fs-4">12.000</div>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-secondary w-100 fs-4"> <i class="bi bi-cart-check"></i> Beli </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 shadow">
+            <div class="card">
+              <img src="images/produk/product_latte.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-3">latte</h5>
+                <div class="row hargasize my-4">
+                  <div class="col fs-4">200 ml</div>
+                  <div class="col fw-bold text-secondary fs-4">20.000</div>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-secondary w-100 fs-4"> <i class="bi bi-cart-check"></i> Beli </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="riki-block footer-small py-2 bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-8">
+            <ul class="nav justify-content-center justify-content-md-start">
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="index.html#best-seller">Best Seller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#our-team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#review">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#contact-us">Contact US</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right text-light">&copy; 2023 Kopi Kuy &amp; Team . All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="results-container"></div>
+    <!-- Batas Akhir penulisan kode Bootstrap -->
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/jquery-3.6.3.min.js"></script>
+
+    <script>
+      /* Tulis Javascript Di bawah Sini */
+      var sumber = 'https://rikikurnia.com/prakerja/api/kopi';
+      var sumber2 = 'data.json';
+
+      select_kopi.onchange = function () {
+        var dipilih = select_kopi.value;
+        console.log('Nilai Kopi Diganti ke ' + dipilih);
+
+        $.getJSON(sumber2).then(function (data) {
+          var data_kopi = data[dipilih];
+          console.log(data_kopi);
+          /* Kode ketiga paste di bawah sini jangan lewat }) */
+          baris_produk.innerHTML = '';
+          data_kopi.forEach((item) => {
+            baris_produk.innerHTML += `<div class="col mb-3 shadow">
+                    <div class="card">
+                            <img src="${item.foto}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">${item.nama}</h5>
+                                <div class="row hargasize my-4">
+                                    <div class="col fs-4">
+                                        ${item.size}
+                                    </div>
+                                    <div class="col fw-bold text-secondary fs-4">
+                                        ${item.harga}
+                                    </div>
+                                </div>
+                                <a href="${item.link}" class="btn btn-outline-light btn-secondary w-100 fs-4">
+                                    <i class="bi bi-cart-check"></i> Beli
+                                </a>
+                            </div>
+                        </div>
+                    </div>`;
+          });
+        });
+      };
+      select_harga.onchange = function () {
+        var dipilih = select_harga.value;
+        console.log('Nilai Kopi Diganti ke ' + dipilih);
+
+        $.getJSON(sumber2).then(function (data) {
+          var data_kopi = data[dipilih];
+          console.log(data_kopi);
+          /* Kode ketiga paste di bawah sini jangan lewat }) */
+          baris_produk.innerHTML = '';
+          data_kopi.forEach((item) => {
+            baris_produk.innerHTML += `<div class="col mb-3 shadow">
+                    <div class="card">
+                            <img src="${item.foto}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">${item.nama}</h5>
+                                <div class="row hargasize my-4">
+                                    <div class="col fs-4">
+                                        ${item.size}
+                                    </div>
+                                    <div class="col fw-bold text-secondary fs-4">
+                                        ${item.harga}
+                                    </div>
+                                </div>
+                                <a href="${item.link}" class="btn btn-outline-light btn-secondary w-100 fs-4">
+                                    <i class="bi bi-cart-check"></i> Beli
+                                </a>
+                            </div>
+                        </div>
+                    </div>`;
+          });
+        });
+
+        document.getElementById('search-form').addEventListener('submit', function (e) {
+          e.preventDefault(); // Mencegah pengiriman form ke server
+
+          const searchTerm = document.getElementById('search-input').value.toLowerCase();
+          searchFoods(searchTerm);
+        });
+
+        function searchFoods(searchTerm) {
+          fetch('foods.json')
+            .then((response) => response.json())
+            .then((data) => {
+              const results = data.filter((food) => food.name.toLowerCase().includes(searchTerm));
+              displayResults(results);
+            })
+            .catch((error) => console.error('Error:', error));
+        }
+      };
+
+      function displayResults(results) {
+        const resultsContainer = document.getElementById('results-container');
+        resultsContainer.innerHTML = ''; // Bersihkan kontainer hasil sebelum menambahkan hasil baru
+
+        if (results.length === 0) {
+          resultsContainer.innerHTML = '<p>Tidak ada hasil yang ditemukan.</p>';
+        } else {
+          results.forEach((food) => {
+            const foodCard = document.createElement('div');
+            foodCard.classList.add('food-card');
+            foodCard.innerHTML = `<h2>${food.name}</h2><p>${food.description}</p>`;
+            resultsContainer.appendChild(foodCard);
+          });
+        }
+      }
+
+      /* Batas Akhir penulisan kode Javascript */
+    </script>
+  </body>
+</html>
