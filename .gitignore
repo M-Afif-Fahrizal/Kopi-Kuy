@@ -1,0 +1,5 @@
+# Ignore bahan directory
+/bahan
+
+# Ignore tmp directory
+/tmp

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/theme/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/product.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Tulis Kode Bootstrap Di Bawah Sini -->
+    <nav class="navbar sticky-top navbar-dark bg-primary navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo/logo_kuy.png" height="40" alt="image" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav11" aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav11">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#our-team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#review">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-us">Contact US</a>
+            </li>
+          </ul>
+          <a class="shop" href="products.html">Shop</a>
+          <a class="btn btn-outline-secondary" href="https://wa.me/6289678919901"> <i class="bi bi-whatsapp"></i> Chat </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="riki-block produk text-center my-5 py-5">
+      <div class="container">
+        <h1 class="fs-1">Choose Your Products</h1>
+        <p class="fs-4">Nikmati jenis kopi pilihan dari petani ternama</p>
+        <hr class="border border-primary border-3 opacity-50" />
+
+        <div class="row animate__animated animate__fadeInUp">
+          <div class="col-lg-3">
+            <div class="form-floating">
+              <select class="form-control form-select" id="select_kopi">
+                <option disabled selected>-</option>
+                <option value="arabica">Arabica</option>
+                <option value="robusta">Robusta</option>
+                <option value="nonkopi">Non Kopi</option>
+              </select>
+              <label for="select_kopi">Jenis Kopi</label>
+            </div>
+          </div>
+          <div class="col-lg-3 m-auto mt-md-2 mb-md-2 mt-sm-2 mb-sm-2">
+            <div class="form-floating">
+              <select class="form-control form-select" id="select_harga">
+                <option disabled selected>-</option>
+                <option value="murah">murah</option>
+                <option value="mahal">mahal</option>
+              </select>
+              <label for="select_kopi">Harga</label>
+            </div>
+          </div>
+
+          <div class="col-lg-4 m-auto">
+            <form class="input-group" id="search-form">
+              <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari Coffee..." aria-label="Search" />
+              <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5">
+          <div class="col mb-3 shadow">
+            <div class="card">
+              <img src="assets/images/produk/product_capuchino.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-3">Cappuccino</h5>
+                <div class="row hargasize my-4">
+                  <div class="col fs-4">150 ml</div>
+                  <div class="col fw-bold text-secondary fs-4">15.000</div>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-secondary w-100 fs-4"> <i class="bi bi-cart-check"></i> Beli </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3 shadow">
+            <div class="card">
+              <img src="assets/images/produk/product_espresso.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-3">Esspresso</h5>
+                <div class="row hargasize my-4">
+                  <div class="col fs-4">150 ml</div>
+                  <div class="col fw-bold text-secondary fs-4">18.000</div>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-secondary w-100 fs-4"> <i class="bi bi-cart-check"></i> Beli </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 shadow">
+            <div class="card">
+              <img src="assets/images/produk/product_kopi_susu.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-3">Coffee Milk</h5>
+                <div class="row hargasize my-4">
+                  <div class="col fs-4">130 ml</div>
+                  <div class="col fw-bold text-secondary fs-4">12.000</div>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-secondary w-100 fs-4"> <i class="bi bi-cart-check"></i> Beli </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 shadow">
+            <div class="card">
+              <img src="assets/images/produk/product_latte.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fs-3">latte</h5>
+                <div class="row hargasize my-4">
+                  <div class="col fs-4">200 ml</div>
+                  <div class="col fw-bold text-secondary fs-4">20.000</div>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-secondary w-100 fs-4"> <i class="bi bi-cart-check"></i> Beli </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="riki-block footer-small py-2 bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-8">
+            <ul class="nav justify-content-center justify-content-md-start">
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="index.html#best-seller">Best Seller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#our-team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#review">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#contact-us">Contact US</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right text-light">&copy; 2023 Kopi Kuy &amp; Team . All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- Batas Akhir penulisan kode Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/product.js"></script>
+  </body>
+</html>
