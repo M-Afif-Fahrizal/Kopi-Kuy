@@ -536,6 +536,34 @@ footer div.navigasi a {
 
 /* UNTUK kode RESPONSIF hari ke 3 tulis DI BAWAH sini */
 
+@media (max-width:600px) {
+   .navigasi {
+      display: none;
+   }
+
+   a.shop {
+      margin-right: 10px;
+      margin-left: auto;
+   }
+
+   header div.kiri,
+   header div.kanan {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+   }
+
+   div.produk,
+   div.kontak,
+   div.team {
+      width: 50%;
+   }
+
+   div.testimoni {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+}
 
 
 /* Kode CSS Selesai di sini */
