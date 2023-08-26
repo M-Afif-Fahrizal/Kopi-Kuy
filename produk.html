@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
     <title>Produk</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="my-theme/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/product.css" />
@@ -58,8 +59,8 @@
         <hr class="border border-primary border-3 opacity-75 shadow" />
 
         <!-- Ini Untuk Select -->
-        <div class="row">
-          <div class="col-3">
+        <div class="row animate__animated animate__fadeInUp">
+          <div class="col-lg-3 m-auto">
             <div class="form-floating">
               <select class="form-control form-select" id="select_kopi">
                 <option disabled selected>-</option>
@@ -70,7 +71,7 @@
               <label for="select_kopi">Jenis Kopi</label>
             </div>
           </div>
-          <div class="col-3 m-auto">
+          <div class="col-lg-3 m-auto mt-md-2 mb-md-2 mt-sm-2 mb-sm-2">
             <div class="form-floating">
               <select class="form-control form-select" id="select_harga">
                 <option disabled selected>-</option>
@@ -81,7 +82,7 @@
             </div>
           </div>
 
-          <div class="col-4 m-auto">
+          <div class="col-lg-4 m-auto">
             <form class="input-group" id="search-form">
               <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari Coffee..." aria-label="Search" />
               <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
