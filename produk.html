@@ -83,7 +83,7 @@
 
           <div class="col-4 m-auto">
             <form class="input-group" id="search-form">
-              <input iid="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari Coffee..." aria-label="Search" />
+              <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari Coffee..." aria-label="Search" />
               <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
@@ -246,24 +246,26 @@
                     </div>`;
           });
         });
-
-        document.getElementById('search-form').addEventListener('submit', function (e) {
-          e.preventDefault(); // Mencegah pengiriman form ke server
-
-          const searchTerm = document.getElementById('search-input').value.toLowerCase();
-          searchFoods(searchTerm);
-        });
-
-        function searchFoods(searchTerm) {
-          fetch('foods.json')
-            .then((response) => response.json())
-            .then((data) => {
-              const results = data.filter((food) => food.name.toLowerCase().includes(searchTerm));
-              displayResults(results);
-            })
-            .catch((error) => console.error('Error:', error));
-        }
       };
+
+      const searchInput = document.getElementById('search-input');
+      searchInput.addEventListener('input', function () {
+        const searchTerm = searchInput.value.toLowerCase();
+        searchFoods(searchTerm);
+      });
+
+      function searchFoods(searchTerm) {
+        fetch('search.json')
+          .then((response) => response.json())
+          .then((data) => {
+            const results = [];
+            for (const key in data) {
+              results.push(...data[key].filter((food) => food.nama.toLowerCase().includes(searchTerm)));
+            }
+            displayResults(results);
+          })
+          .catch((error) => console.error('Error:', error));
+      }
 
       function displayResults(results) {
         const resultsContainer = document.getElementById('results-container');
@@ -272,10 +274,29 @@
         if (results.length === 0) {
           resultsContainer.innerHTML = '<p>Tidak ada hasil yang ditemukan.</p>';
         } else {
+          baris_produk.innerHTML = ' ';
           results.forEach((food) => {
-            const foodCard = document.createElement('div');
-            foodCard.classList.add('food-card');
-            foodCard.innerHTML = `<h2>${food.name}</h2><p>${food.description}</p>`;
+            baris_produk.innerHTML = `
+      <div class="col mb-3 shadow">
+              <div class="card">
+                      <img src="${food.foto}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title fs-3">${food.nama}</h5>
+                          <div class="row hargasize my-4">
+                              <div class="col fs-4">
+                                  ${food.size}
+                              </div>
+                              <div class="col fw-bold text-secondary fs-4">
+                                  ${food.harga}
+                              </div>
+                          </div>
+                          <a href="${food.link}" class="btn btn-outline-light btn-secondary w-100 fs-4">
+                              <i class="bi bi-cart-check"></i> Beli
+                          </a>
+                      </div>
+                  </div>
+              </div>
+      `;
             resultsContainer.appendChild(foodCard);
           });
         }

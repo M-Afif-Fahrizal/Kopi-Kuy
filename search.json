@@ -1,17 +1,86 @@
-[
-  {
-    "id": 1,
-    "name": "Nasi Goreng",
-    "description": "Nasi yang digoreng dengan bumbu dan bahan lainnya."
-  },
-  {
-    "id": 2,
-    "name": "Mie Goreng",
-    "description": "Mie yang digoreng dengan bumbu dan bahan lainnya."
-  },
-  {
-    "id": 3,
-    "name": "Sate Ayam",
-    "description": "Potongan ayam yang ditusuk dan dibakar dengan bumbu kacang."
-  }
-]
+{
+  "arabica": [
+    {
+      "foto": "images/produk/product_capuchino.jpg",
+      "nama": "Cappuccino Arabica",
+      "size": "250 ml",
+      "harga": "15.000",
+      "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop"
+    },
+    {
+      "foto": "images/produk/product_espresso.jpg",
+      "nama": "Bitter Arabica",
+      "size": "250 ml",
+      "harga": "15.000",
+      "link": "https://www.google.com/search?q=pahit+arabica&tbm=shop"
+    },
+    {
+      "foto": "images/produk/product_latte.jpg",
+      "nama": "Latte Arabica",
+      "size": "250 ml",
+      "harga": "20.000",
+      "link": "https://www.google.com/search?q=latte+arabica&tbm=shop"
+    }
+  ],
+  "robusta": [
+    {
+      "foto": "images/produk/product_kopi_susu.jpg",
+      "nama": "Coffee Milk Robusta",
+      "size": "250 ml",
+      "harga": "20.000",
+      "link": "https://www.google.com/search?q=kopi+susu+robusta&tbm=shop"
+    },
+    {
+      "foto": "images/produk/product_latte.jpg",
+      "nama": "Latte Robusta",
+      "size": "250 ml",
+      "harga": "20.000",
+      "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+    }
+  ],
+
+  "nonkopi": [
+    {
+      "foto": "https://asset.kompas.com/crops/qn1n1XThik6uqJ8HRDVmH27uuvg=/0x0:1000x667/750x500/data/photo/2023/03/12/640d6eac51567.jpg",
+      "nama": "Es Dawet",
+      "size": "250 ml",
+      "harga": "15.000",
+      "link": "https://www.google.com/search?q=kopi+susu+robusta&tbm=shop"
+    },
+    {
+      "foto": "https://www.astronauts.id/blog/wp-content/uploads/2023/03/Daftar-Resep-Es-Buah-yang-Mudah-dan-Enak.jpg",
+      "nama": "Es Buah",
+      "size": "250 ml",
+      "harga": "20.000",
+      "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+    },
+    {
+      "foto": "https://www.frisianflag.com/storage/app/media/uploaded-files/es-teler-nikmat.jpg",
+      "nama": "Es Teler",
+      "size": "250 ml",
+      "harga": "20.000",
+      "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+    },
+    {
+      "foto": "https://asset.kompas.com/crops/LgGmDBxglevUdnCm4fWkEIkVy-U=/0x0:739x493/750x500/data/photo/2020/01/29/5e3187c1ac05f.jpg",
+      "nama": "Es Kelapa",
+      "size": "250 ml",
+      "harga": "15.000",
+      "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+    },
+    {
+      "foto": "https://image.popbela.com/content-images/post/20220408/82cdaa441c5e1bcc7320ea4980cb7585.jpg?width=1600&format=webp&w=1600",
+      "nama": "Es Campur",
+      "size": "250 ml",
+      "harga": "20.000",
+      "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+    },
+    {
+      "foto": "https://www.masakapahariini.com/wp-content/uploads/2023/04/shutterstock_2215740095-500x300.jpg",
+      "nama": "Es Cincau",
+      "size": "250 ml",
+      "harga": "20.000",
+      "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+    }
+  ]
+}
